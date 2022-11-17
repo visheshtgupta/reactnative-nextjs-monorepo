@@ -19,7 +19,10 @@ export const HomeScreen = () => {
 
   return (
     <SafeAreaView style={styles.root}>
-      <Image style={styles.logo} source={require("./logo.png")} />
+      <Image
+        style={styles.logo}
+        source={require("../assets/images/logo.png")}
+      />
       <Text style={styles.text}>Hello from React Native!</Text>
       <View style={styles.platformRow}>
         <Text style={styles.text}>Platform: </Text>
@@ -49,6 +52,7 @@ const styles = StyleSheet.create({
   },
   platformRow: {
     marginTop: 12,
+    marginBottom: 16,
     flexDirection: "row",
     alignItems: "center",
   },
